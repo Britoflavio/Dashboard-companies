@@ -1,7 +1,8 @@
 import {Input} from '@/components/ui/input'
-import {Sheet, SheetContent, SheetTrigger} from '@/components/ui/sheet'
+import {Sheet, SheetContent, SheetTitle, SheetTrigger} from '@/components/ui/sheet'
 import { UserButton } from '@clerk/nextjs'
 import { Menu, Search } from 'lucide-react'
+import { SidebarRoutes } from '../SidebarRoutes'
 export default function Navbar() {
   return (
     <div className='flex items-center px-2 gap-x-4 md:px-6
@@ -12,7 +13,8 @@ export default function Navbar() {
             <Menu/>
           </SheetTrigger>
           <SheetContent side='left'>
-            <p>Side routes</p>
+            <SheetTitle className='hidden'/>
+            <SidebarRoutes/>
           </SheetContent>
         </Sheet>
       </div>
