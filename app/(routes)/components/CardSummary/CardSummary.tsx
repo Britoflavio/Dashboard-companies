@@ -1,6 +1,6 @@
 import React from 'react'
 import { CardSummaryProps } from './CardSummary.types'
-import CustomIcon from '@/components/ui/CustomIcon/CustomIcon'
+import {CustomIcon} from '@/components/ui/CustomIcon/CustomIcon'
 import CustomTooltip from '@/components/CustomTooltip/CustomTooltip'
 import { cn } from '@/lib/utils'
 import { MoveUpRight, MoveDownRight, TrendingUp } from 'lucide-react'
